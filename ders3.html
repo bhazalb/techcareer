@@ -11,23 +11,23 @@
     <li>Kinyas ve Kayra</li>
     <li>Olasılıksız</li>
 </ul>
-
+<!--
 <ul id="other">
     <li>books1</li>
     <li>books2</li>
     <li>books3</li>
-</ul>
+</ul>-->
 <button onclick=" myFunction() ">Ekle</button>
 <script>
   
   function myFunction() {
-   /* const ekle=document.createElement("li");*/
-   /* const textnode= document.createTextNode("Masumiyet");*/
-   /* ekle.appendChild(textnode);*/
-   /* document.getElementById("books").appendChild(ekle);*/
+    const ekle=document.createElement("li");
+   const textnode= document.createTextNode("Masumiyet");
+    ekle.appendChild(textnode);
+    document.getElementById("books").appendChild(ekle);
 
-    const list = document.getElementById("other").lastElementChild;
-    document.getElementById("books").appendChild(list);
+    /*const list = document.getElementById("other").lastElementChild;
+    document.getElementById("books").appendChild(list);*/
   }
     
 </script>
